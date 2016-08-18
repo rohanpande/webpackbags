@@ -1,0 +1,35 @@
+{
+    "name": "webpackbags",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "jquery": "^3.1.0",
+        "mustache": "^2.2.1",
+        "babel-preset-stage-1": "^6.1.18",
+        "lodash": "^3.10.1",
+        "react": "^0.14.3"
+    },
+    "devDependencies": {
+        "babel-core": "^6.13.2",
+        "babel-loader": "^6.2.5",
+        "babel-preset-es2015": "^6.13.2",
+        "babel-preset-react": "^6.11.1",
+        "css-loader": "^0.23.1",
+        "html-loader": "^0.4.3",
+        "lodash": "^3.10.1",
+        "node-sass": "^3.8.0",
+        "react": "^0.14.8",
+        "sass-loader": "^4.0.0",
+        "style-loader": "^0.13.1",
+        "webpack": "^1.13.2",
+        "webpack-dev-server": "^1.14.1",
+        "webpack-server": "^0.1.2"
+    }
+}
