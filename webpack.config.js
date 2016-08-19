@@ -8,26 +8,16 @@ module.exports = {
     },
     module: {
         loaders: [{
+            test: /\.js/,
+            loader: 'babel',
+            include: __dirname + '/src',
+        }, {
             test: /\.scss/,
             loaders: ['style', 'css', 'sass'],
         }, {
             test: /\.html/,
             loader: 'html',
-        }, {
-            test: /\.js/,
-            loader: 'babel-loader',
-            query: {
-                presets: ["react", "es2015", "stage-1"]
-            },
-            exclude: /node_modules/
-        }, ]
+        }]
 
-    },
-    resolve: {
-        extensions: ['', '.js', '.jsx']
-    },
-    devServer: {
-        historyApiFallback: true,
-        contentBase: './'
     }
 };
